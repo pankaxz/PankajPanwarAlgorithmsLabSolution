@@ -11,8 +11,8 @@ public class Denomination {
         int i = 0;
         while(i < denominationSize) {
             denominationsArray[i] = sc.nextInt();
-            if(denominationsArray[i] <= 1){
-                System.out.println("Please enter a denomination amount greater than 1");
+            if(denominationsArray[i] < 1){
+                System.out.println("Please enter a denomination amount greater than 0");
                 denominationsArray[i] = 0;
             }
             else
